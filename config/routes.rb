@@ -1,8 +1,10 @@
-SampleApp::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
-  get "static_pages/contact"
+PustMedApp::Application.routes.draw do
+  root  'static_pages#home'
+  match '/about',      to: 'static_pages#about',     via: 'get'
+  match '/academics',  to: 'static_pages#academics', via: 'get'
+  match '/life',       to: 'static_pages#life',      via: 'get'
+  match '/give',       to: 'static_pages#give',      via: 'get'
+  match '/contact',    to: 'static_pages#contact',   via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

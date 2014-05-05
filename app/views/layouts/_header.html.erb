@@ -1,22 +1,70 @@
-    <header>
-      <nav class="navbar navbar-fixed-top navbar-inverse">
-	      <div class="container-fluid">
-	        <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-  	      	<%= link_to "sample app", '#', id: "logo", class: 'navbar-brand' %>
-	        </div> <!-- /.navbar-header -->
-	        <div class="collapse navbar-collapse">
-	          <ul class="nav navbar-nav navbar-right">
-	            <li><%= link_to "Home",    '#' %></li>
-	            <li><%= link_to "Help",    '#' %></li>
-	            <li><%= link_to "Sign in", '#' %></li>
-	          </ul>
-	        </div><!-- /.navbar-collapse -->
-	      </div><!-- /.container-fluid -->
-      </nav>
-    </header>
+<header>
+  <nav class="navbar navbar-fixed-top navbar-inverse" id="navbar-main">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" id="collapse-button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <%= link_to "pust medical sciences", '#', id: "logo", class: 'navbar-brand' %>
+       </div> <!-- /.navbar-header -->
+       <div class="collapse navbar-collapse">
+         <ul class="nav navbar-nav navbar-left">
+           <li><%= link_to "HOME",         root_path %></li>
+           <li><%= link_to "ABOUT",        about_path %></li>
+           <li><%= link_to "ACADEMICS",    academics_path %></li>
+           <li><%= link_to "LIFE AT PUMS", life_path %></li>
+           <li><%= link_to "GIVE",         give_path %></li>
+           <li><%= link_to "CONTACT",      contact_path %></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div id="carousel-header" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-header" data-slide-to="1"></li>
+      <li data-target="#carousel-header" data-slide-to="2"></li>
+    </ol>
+    <!-- ./Indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag "carousel-main-01.jpg", alt: "Carousel 1" %>
+        <div class="carousel-caption">
+          [Carousel caption one]
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "carousel-main-02.jpg", alt: "Carousel 2" %>
+        <div class="carousel-caption">
+          [Carousel caption two]
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag "carousel-main-03.jpg", alt: "Carousel 3" %>
+        <div class="carousel-caption">
+          [Carousel caption three]
+        </div>
+      </div>
+    </div>
+    <!-- ./Wrapper for slides -->
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-header" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-header" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    <!-- ./Controls -->
+
+  </div><!-- /.#carousel-header -->
+</header>
