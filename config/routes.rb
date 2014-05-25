@@ -1,5 +1,5 @@
 PustMedApp::Application.routes.draw do
-  root  :to => 'static_pages#home'
+  root  'static_pages#home'
   match '/about',      to: 'static_pages#about',     via: 'get'
   match '/academics',  to: 'static_pages#academics', via: 'get'
   match '/life',       to: 'static_pages#life',      via: 'get'
