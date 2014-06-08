@@ -58,7 +58,7 @@ p {
 h1 {
   padding-top: 35px;
   font-family: Arial, sans-serif;
-  color: #336699;
+  color: #1f497d;
   font-size: 1.75em;
   letter-spacing: 1px;
   text-align: left;
@@ -83,7 +83,7 @@ h1 {
   text-decoration: none;
 }
 #navbar-main {
-  background-color: #003366;
+  background-color: #1f497d;
   opacity: 0.8;
   min-height: 70px;
 }
@@ -110,10 +110,20 @@ h1 {
 a.carousel-control>.glyphicon {
   top: 190px;
 }
+div#header-shadow {
+  width: 100%;
+  height: 40px;
+  background-image: image-url('shadow.png');
+  background-size: 100% 40px;
+  background-repeat: no-repeat;
+}
 
 
 
 /* Body elements */
+#main {
+  min-height: 750px;
+}
 span.h-bar {
   position: relative;
   top: -10px;
@@ -144,9 +154,10 @@ span.h-bar {
 /* footer */
 footer {
   margin-top: 45px;
-  padding-top: 5px;
+  padding: 0px;
   border-top: 1px solid #eaeaea;
   color: #999;
+  background-color: #666666;
 }
 footer a {
   color: #555;
@@ -164,4 +175,33 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 10px;
+}
+#footer-top-1 {
+  width: 100%;
+  height: 5px;
+  background-color: #cccccc;
+}
+#footer-top-2 {
+  width: 100%;
+  height: 5px;
+  background-color: #999999;
+}
+#footer-main {
+  height: 240px;
+}
+#footer-copyright {
+  width: 100%;
+  height: 38px;
+  padding: 8px;
+  background-color: #999999;
+  color: #ffffff;
+  font-family: 'Lato', "Helvetica Neue", sans-serif;
+  font-weight: light;
+  font-size: 1em;
+  line-height: 1.7em;
+}
+#footer-base {
+  width: 100%;
+  height: 5px;
+  background-color: #666666;
 }
