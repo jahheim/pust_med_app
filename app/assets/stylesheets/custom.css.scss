@@ -40,7 +40,7 @@ h2 {
 }
 p {
   font-family: 'Lato', "Helvetica Neue", sans-serif;
-  font-weight: light;
+  font-weight: 400;
   font-size: 1.1em;
   line-height: 1.7em;
   color: #666666;
@@ -96,16 +96,45 @@ h1 {
   margin-top: 17px;
 }
 .carousel {
-  max-height: 350px;
+  max-height: 375px;
   overflow: hidden;
+  position: relative;
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
   height: auto;
-  top: 0;
+  top: 0px !important;
   min-width: 100%;
 }
 .carousel-caption {
-  top: 245px;
+  top: 275px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.carousel-hero-unit {
+  top: 125px;
+  left: 20%;
+  padding-top: 0px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  width: 325px;
+  height: 140px;
+  text-align: left;
+  background-color: #fcf8e3;
+
+  opacity: 0.6;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; /* future proofing */
+  -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+.carousel-hero-unit h1 {
+  padding-top: 0px !important;
+  color: #1f497d;
+  font-weight: 400; 
+}
+.carousel-indicators {
+  bottom: 0px;
 }
 a.carousel-control>.glyphicon {
   top: 190px;
@@ -196,7 +225,7 @@ footer ul li {
   background-color: #999999;
   color: #ffffff;
   font-family: 'Lato', "Helvetica Neue", sans-serif;
-  font-weight: light;
+  font-weight: 300;
   font-size: 1em;
   line-height: 1.7em;
 }
